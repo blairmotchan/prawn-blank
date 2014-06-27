@@ -50,21 +50,21 @@ Prawn::Document.generate("prawn-blank-example.pdf",:page_size=>'A4') do |pdf|
   
   pdf.draw_text "no that", :at=>[page_left+265,page_top-130]
   
-  pdf.radiogroup(:name => 'radio', :value=>:That) do |rg|
-    
-    pdf.radio(
-      :parent => rg,
-      :at=>[page_left+200,page_top-130],
-      :value => :This
-    )
-    
-    pdf.radio(
-      :parent => rg,
-      :at => [page_left+250,page_top-130],
-      :value => :That
-    )
-    
-  end
+  # pdf.radiogroup(:name => 'radio', :value=>:That) do |rg|
+  #
+  #   pdf.radio(
+  #     :parent => rg,
+  #     :at=>[page_left+200,page_top-130],
+  #     :value => :This
+  #   )
+  #
+  #   pdf.radio(
+  #     :parent => rg,
+  #     :at => [page_left+250,page_top-130],
+  #     :value => :That
+  #   )
+  #
+  # end
   
   pdf.draw_text "Well that's it for now!", :at=>[page_left,page_top-150]
   
